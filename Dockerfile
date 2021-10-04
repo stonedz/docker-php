@@ -56,8 +56,7 @@ RUN apk add \
     php8-tokenizer \
     php8-xml \
     php8-xmlwriter \
-    php8-zip \
-    wkhtmltopdf
+    php8-zip
 
 # install composer
 RUN apk add \
