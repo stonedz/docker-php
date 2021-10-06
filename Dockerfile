@@ -48,7 +48,7 @@ RUN apk add \
     php8-pdo_mysql \
     php8-pdo_sqlite \
     php8-posix \
-    php8-redis \
+    php8-pecl-redis \
     php8-session \
     php8-simplexml \
     php8-soap \
