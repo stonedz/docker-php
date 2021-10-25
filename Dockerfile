@@ -58,9 +58,19 @@ RUN apk add \
     php8-xmlwriter \
     php8-zip
 
+# configure php-fpm8
+ADD --chown=root:root include-docker/www.conf /etc/php8/php-fpm.d/www.conf
+
 # install composer
 RUN apk add \
     composer
+
+# locales
+ENV MUSL_LOCPATH="/usr/share/i18n/locales/musl"
+RUN apk add \
+    musl-locales \
+    musl-locales-lang
+
 
 # install apache
 RUN apk add \
