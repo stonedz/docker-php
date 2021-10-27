@@ -34,7 +34,6 @@ RUN apk add \
     php8-ctype \
     php8-curl \
     php8-dom \
-    php8-exif \
     php8-fileinfo \
     php8-gd \ 
     php8-gettext \
